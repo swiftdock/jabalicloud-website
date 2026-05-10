@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* Logo — large and fully visible on white */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
           <img src="/logo.png" alt="JabaliCloud"
-            style={{ height: 88, width: 'auto', maxWidth: 260, display: 'block' }} />
+            style={{ height: 'auto', width: 'auto', maxWidth: 200, maxHeight: 80, display: 'block' }} />
         </Link>
 
         {/* Desktop nav */}
