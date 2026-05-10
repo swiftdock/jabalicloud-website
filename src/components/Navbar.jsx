@@ -30,9 +30,8 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#0a0e1a]/95 backdrop-blur-md shadow-lg shadow-black/30 border-b border-white/5' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-emerald-500 flex items-center justify-center text-white font-bold text-sm">J</div>
-          <span className="font-bold text-white text-lg tracking-tight">Jabali<span className="text-violet-400">Cloud</span></span>
+        <Link to="/" className="flex items-center">
+          <img src="/logo.png" alt="JabaliCloud" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop nav */}
@@ -72,7 +71,7 @@ export default function Navbar() {
           <a href="https://my.jabalicloud.com" className="text-sm text-gray-300 hover:text-white px-4 py-2 rounded-lg hover:bg-white/5 transition-all">
             Client Login
           </a>
-          <a href="https://my.jabalicloud.com" className="text-sm font-semibold bg-violet-600 hover:bg-violet-500 text-white px-5 py-2 rounded-lg transition-all shadow-lg shadow-violet-900/30">
+          <a href="https://my.jabalicloud.com" className="text-sm font-semibold text-white px-5 py-2 rounded-lg transition-all shadow-lg" style={{background:'linear-gradient(135deg,#2563eb,#00b894)'}}>
             Get Started
           </a>
         </div>

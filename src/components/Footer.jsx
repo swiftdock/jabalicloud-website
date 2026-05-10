@@ -30,9 +30,8 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-emerald-500 flex items-center justify-center text-white font-bold text-sm">J</div>
-              <span className="font-bold text-white text-lg">Jabali<span className="text-violet-400">Cloud</span></span>
+            <div className="mb-4">
+              <img src="/logo.png" alt="JabaliCloud" className="h-10 w-auto brightness-0 invert" />
             </div>
             <p className="text-sm text-gray-400 leading-relaxed mb-4">
               Reliable web hosting built for Africa. Fast servers, 24/7 support, and enterprise-grade security.
