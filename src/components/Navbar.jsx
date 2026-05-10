@@ -34,12 +34,12 @@ export default function Navbar() {
       boxShadow: scrolled ? '0 1px 16px rgba(15,23,42,.06)' : 'none',
       transition: 'all .3s',
     }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 24px', height: 76, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 24px', height: 96, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
 
         {/* Logo — large and fully visible on white */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
           <img src="/logo.png" alt="JabaliCloud"
-            style={{ height: 64, width: 'auto', maxWidth: 220, display: 'block' }} />
+            style={{ height: 88, width: 'auto', maxWidth: 260, display: 'block' }} />
         </Link>
 
         {/* Desktop nav */}

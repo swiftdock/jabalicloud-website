@@ -29,7 +29,7 @@ const IMG = {
 function Hero() {
   const [domain, setDomain] = useState('');
   return (
-    <section style={{ position:'relative', background:'#f8fafc', overflow:'hidden', paddingTop:80 }}>
+    <section style={{ position:'relative', background:'#f8fafc', overflow:'hidden', paddingTop:100 }}>
       <div style={{ position:'absolute', top:0, right:0, width:600, height:500, pointerEvents:'none',
         background:'radial-gradient(ellipse 70% 60% at 80% 20%, rgba(37,99,235,.08) 0%, transparent 65%)' }} />
       <div style={{ position:'absolute', inset:0, pointerEvents:'none', opacity:.4,
