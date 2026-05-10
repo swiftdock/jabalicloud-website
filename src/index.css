@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: #0a0e1a;
+  color: #f9fafb;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+#root { min-height: 100vh; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0e1a; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 99px; }
+
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
+@keyframes pulse { 0%,100%{opacity:.5} 50%{opacity:1} }
+@keyframes spin { to{transform:rotate(360deg)} }
+
+.animate-float { animation: float 7s ease-in-out infinite; }
+.fade-up { animation: fadeUp .7s ease forwards; }
+.section-reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
+.section-reveal.visible { opacity: 1; transform: none; }
+
+/* Gradient text */
+.grad { background: linear-gradient(135deg,#a78bfa,#10b981); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.grad-violet { background: linear-gradient(135deg,#8b5cf6,#a78bfa); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+
+/* Glassmorphism card */
+.glass { background: rgba(17,24,39,.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,.08); }
+.glass-hover { transition: border-color .2s, box-shadow .2s; }
+.glass-hover:hover { border-color: rgba(139,92,246,.4); box-shadow: 0 0 32px rgba(139,92,246,.15); }
+
+/* Orbs */
+.orb { position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none; }
